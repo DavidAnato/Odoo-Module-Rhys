@@ -1,0 +1,41 @@
+
+<odoo>
+    <data>
+        <!-- List View -->
+        <record model="ir.ui.view" id="assistant_vocal_list_view">
+            <field name="name">assistant.vocal.list.view</field>
+            <field name="model">assistant.vocal</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="query"/>
+                    <field name="response"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form View -->
+        <record model="ir.ui.view" id="assistant_vocal_form_view">
+            <field name="name">assistant.vocal.form.view</field>
+            <field name="model">assistant.vocal</field>
+            <field name="arch" type="xml">
+                <form>
+                    <field name="name"/>
+                    <field name="query"/>
+                    <field name="response"/>
+                </form>
+            </field>
+        </record>
+
+        <!-- Action -->
+        <record model="ir.actions.act_window" id="action_assistant_vocal_list">
+            <field name="name">Assistant Vocal</field>
+            <field name="res_model">assistant.vocal</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menu -->
+        <menuitem name="Assistant Vocal" id="menu_assistant_vocal"
+            action="action_assistant_vocal_list"/>
+    </data>
+</odoo>

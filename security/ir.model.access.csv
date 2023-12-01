@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_assistant_vocal,assistant.vocal,model_assistant_vocal,base.group_user,1,1,1,1
+access_googlesheet_sheet,googlesheet.sheet,model_googlesheet_sheet,base.group_user,1,1,1,1
+access_sheetgpt_sheet,sheetgpt.sheet,model_sheetgpt_sheet,base.group_user,1,1,1,1
